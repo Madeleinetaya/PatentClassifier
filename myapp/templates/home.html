@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+<div class="home-page">
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Welcome to PatentClassifier</h1>
+      <p class="lead">Classify patents with ease and precision!</p>
+      <hr class="my-4">
+      <p>Efficient, transparent, and reliable patent classification.</p>
+      <a class="btn btn-primary btn-lg" href="{% url 'classify_create' %}" role="button">Submit Patent</a>
+      <a class="btn btn-secondary btn-lg" href="{% url 'classify_list' %}" role="button">Explore Classifications</a>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'myapp/images/classify.jpg' %}" alt="Classify Patent">
+          <div class="card-body">
+            <h5 class="card-title">Submit Patents</h5>
+            <p class="card-text">Easily submit your patents for classification using our advanced tools.</p>
+            <a href="{% url 'classify_create' %}" class="btn btn-primary">Submit Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'myapp/images/explore.jpg' %}" alt="Explore Classifications">
+          <div class="card-body">
+            <h5 class="card-title">Explore Classifications</h5>
+            <p class="card-text">Explore detailed classifications and understand the decision-making process.</p>
+            <a href="{% url 'classify_list' %}" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'myapp/images/learn.jpg' %}" alt="Learn More">
+          <div class="card-body">
+            <h5 class="card-title">Learn More</h5>
+            <p class="card-text">Learn more about how our classification system works and its benefits.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

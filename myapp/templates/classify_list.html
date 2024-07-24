@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}My Classifications{% endblock %}
+{% block content %}
+<h2>My Classifications</h2>
+{% if classifications %}
+  <ul class="list-group">
+    {% for classification in classifications %}
+      <li class="list-group-item">
+        <a href="{% url 'classify_detail' classification.pk %}">{{ classification.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>You have no classifications yet. <a href="{% url 'classify_create' %}">Create one</a></p>
+{% endif %}
+
+<p> <a href="{% url 'classify_create' %}">Create one</a></p>
+{% endblock %}

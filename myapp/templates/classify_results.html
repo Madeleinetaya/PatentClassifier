@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+Classification Results
+{% endblock %}
+
+{% block content %}
+<div class="classification-results">
+    <h2>Classification Results</h2>
+    <div class="predicted-cpc">
+        <p><strong>Predicted CPC:</strong> {{ results.0.cpc_predit }}</p>
+    </div>
+    {% for result in results %}
+        {% if not forloop.first %}
+            <div class="result-card">
+                <h3>CPC: {{ result.cpc }}</h3>
+                <p>Most influential words:</p>
+                <ul>
+                {% for word in result.mots_influents %}
+                    <li>{{ word }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Classification Details{% endblock %}
+{% block content %}
+<h2>{{ classification.title }}</h2>
+<p><strong>Description:</strong> {{ classification.description }}</p>
+<p><strong>Author:</strong> {{ classification.author }}</p>
+<p><strong>Depth:</strong> {{ classification.depth }}</p>
+<p><strong>Document:</strong> <a href="{{ classification.document.url }}">Download</a></p>
+{% endblock %}

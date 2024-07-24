@@ -1,0 +1,146 @@
+/* styles.css */
+
+body {
+  background-color: #f8f9fa;
+}
+
+.navbar-custom {
+  background-color: #007bff; /* Couleur de fond bleu */
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-custom .navbar-brand {
+  color: #ffffff !important; /* Couleur du texte en blanc */
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-custom .nav-link {
+  color: #ffffff !important; /* Couleur du texte en blanc */
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ffdd57 !important; /* Couleur du texte au survol */
+}
+
+.navbar-custom .btn-link {
+  color: #ffffff !important; /* Couleur du bouton en blanc */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f8f9fa;
+  text-align: center;
+  border-top: 1px solid #e7e7e7;
+}
+
+.login-page, .signup-page, .classify-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px);
+}
+
+.login-container, .signup-container, .classify-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.classify-container {
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.classification-results {
+  padding: 2rem;
+}
+
+.classification-results h2 {
+  color: #4CAF50;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.predicted-cpc {
+  background-color: #e8f5e9;
+  border-left: 5px solid #4CAF50;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+}
+
+.result-card h3 {
+  color: #4CAF50;
+  margin-top: 0;
+}
+
+.result-card ul {
+  padding-left: 1.5rem;
+}
+
+.result-card ul li {
+  list-style-type: disc;
+}
+
+.home-page {
+  text-align: center;
+  padding: 50px;
+}
+
+.home-page img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.home-page h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.home-page p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.home-page .btn {
+  font-size: 1.2em;
+  padding: 10px 30px;
+  margin: 5px;
+}
+
+.home-page .card {
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-page .card img {
+  border-radius: 10px 10px 0 0;
+}
+
+.home-page .card-body {
+  padding: 20px;
+}
